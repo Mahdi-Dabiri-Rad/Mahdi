@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            mahdi
+        </title>
+        <style>
+            #xwb {border: 1px solid blue}
+            p{border: 1px solid green}
+            ol{border: 1px solid yellow}
+            img{width: 200px;}
+        </style>
+        <body>
+            <center>
+            <img src="M.jpg">
+        </center>
+            <p id="xwb"> F.name:mahdi</p>
+            <p>l.name:dabiri</p>
+            <ol>
+                <li>country:iran</li>
+                <li>city:mashhad</li>
+                <li>street:laleh</li>
+            </ol>
+            <p>Before the script...</p>
+
+            
+             <button id="tex" onclick="myfunc">"ادامه بدیم؟"</button>
+             <script>
+               
+               document.getElementById('tex').onclick = myfunc
+                function myfunc(){
+                    let state=confirm("ادامه بدیم؟ ");
+                 let i = 0;
+                 let obj = {};
+                 while(state == true)
+                 {
+                     let name=prompt("نام");
+                     let family=prompt("فامیل")
+                     obj[i]={
+                     fname:name,
+                     lname:family
+                     }
+                 let state=confirm("ادامه بدیم؟ ");
+                 i++;
+                }
+             
+                 }
+                 console.log(obj);
+             
+                
+           
+             
+               
+             </script>
+        </body>
+    </head>
+</html>
